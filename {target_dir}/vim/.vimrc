@@ -1,9 +1,9 @@
 " Github: https://github.com/Karmenzind/dotfiles-and-scripts
-
+         
 " --------------------------------------------
 " general keymap
 " --------------------------------------------
-
+       
 noremap <leader>e  :vsp $MYVIMRC<cr>
 noremap <leader>R  :source $MYVIMRC<cr>
 noremap <leader>pi :source $MYVIMRC<cr>:PlugInstall<cr>
@@ -12,7 +12,7 @@ noremap <leader>ps :source $MYVIMRC<cr>:PlugStatus<cr>
 noremap <leader>pc :source $MYVIMRC<cr>:PlugClean<cr>
 
 " -----------------------------------------------------------------------------
-"  Plugin Manager
+"  Plugin MUanager
 " -----------------------------------------------------------------------------
 
 " automatically install Plug
@@ -82,7 +82,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " /* Alternative */
-" Plug 'flazz/vim-colorschemes', { 'do': 'rsync -avz ./colors/ ~/.vim/colors/' }
+ Plug 'flazz/vim-colorschemes', { 'do': 'rsync -avz ./colors/ ~/.vim/colors/' }
 " Plug 'bagrat/vim-workspace' " tab bar
 " Plug 'junegunn/limelight.vim'
 " Plug 'junegunn/rainbow_parentheses.vim'
@@ -143,7 +143,7 @@ set showcmd
 
 " operate
 " Enable mouse support in console
-set mouse=a
+"set mouse=a
 
 set matchtime=5 
 set iskeyword+=_,$,@,%,#,-
@@ -258,7 +258,7 @@ let python_highlight_all=1
 " -----------------------------------------------------------------------------
 
 let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_python_binary_path = 'python'
+let g:ycm_python_binary_path = 'python3'
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 let g:ycm_collect_identifiers_from_tags_files = 1
@@ -269,7 +269,7 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_cache_omnifunc = 0
 
 " for ycmd server, not completion
-let g:ycm_server_python_interpreter = '/usr/bin/python'
+let g:ycm_server_python_interpreter = '/usr/bin/python3'
 " let g:ycm_goto_buffer_command = 'horizontal-split'
 
 " key mappings
