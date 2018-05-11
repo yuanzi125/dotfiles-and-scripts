@@ -1,5 +1,5 @@
-" Github: https://github.com/Karmenzind/dotfiles-and-scripts
-         
+"Github: https://github.com/Karmenzind/dotfiles-and-scripts
+     
 " --------------------------------------------
 " general keymap
 " -------------------------------------------     
@@ -101,7 +101,10 @@ runtime macros/matchit.vim
 
 set nocompatible
 set noerrorbells
-
+set hls
+set ignorecase  "检索时忽略大小写
+set helplang=cn 
+set foldmethod=syntax  "代码折叠
 set report=0
 
 " encode
@@ -458,7 +461,7 @@ let g:pydiction_menu_height=10
 
 " for ultisnips
 " Trigger configuration. Do not use <tab> if you use YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<C-space>"
+let g:UltiSnipsExpandTrigger="<F12>"
 let g:UltiSnipsListSnippets="<F10>"
 " let g:UltiSnipsJumpForwardTrigger="<F12>"
 " let g:UltiSnipsJumpBackwardTrigger="<S-F12>"
